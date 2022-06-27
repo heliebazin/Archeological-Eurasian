@@ -91,4 +91,3 @@ quad_diff[4,3] <- l43[4]
 quad_diff[4,4] <- l44[4]
 
 
-t = consensus(ceramic.trees)
