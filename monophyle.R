@@ -35,4 +35,13 @@ monophyle <- function(file,culture){
 
 monophyle(full.trees,yayoi)
 
+i <- which(mumun == "Hanam_Misari")
+mumun2 <- mumun[-i]
+monophyle(others.trees,mumun2)
 
+
+chulmun2 <- c(chulmun,"Hanam_Misari")
+monophyle(others.trees,chulmun2)
+
+monophyle(others.trees,c(yayoi,mumun2))
+monophyle(full.trees,c(chulmun,mumun2,yayoi))
