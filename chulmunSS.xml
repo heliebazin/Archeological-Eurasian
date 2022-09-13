@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='PDCovarion' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data
+id="chulmun"
+spec="Alignment"
+dataType="binary"
+name="alignment">
+
+<sequence spec='Sequence' taxon='Yangyang_Osanri' totalcount='2' value='101001100111110110001100010100101111000000001000000001000000000000110111110000011100000000011001000000100000001011000000000000000000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Siheung_Neunggokdong' totalcount='2' value='100001100110110110001000010100000000000000000000000101000000000000100111110000001100000000010001000000100000011011100000000000010000000000010000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Busan_Dongsamdong' totalcount='2' value='100011111111110110101100010100111111100000001000000111000000001000110111111110011100001000011001000000100000011111111101000011011001000000000101101111000110000000000000000'/>
+<sequence spec='Sequence' taxon='Ansan_Daebubukdong' totalcount='2' value='100001100111110110001000010000000000000000000000000001000000100000110001111100011000000000011001000000100000011011100000000000011000000000110000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Ansan_Singildong' totalcount='2' value='100000100001110110000000010000000000000000000000000000000000000000110000000000000000000000000000000000000000011011100000000000000000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Asan_Jangjaeri' totalcount='2' value='100000100001110110000000010000000000000000000000000000000000000000110001111100001100000000010000000000000000011011100000000000011000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Bongsan_Jitapri' totalcount='2' value='100001100111110110000000010000000000000000000000000001000000100000110001110000011011000000011001000000100000001011100000000000010000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Hwaseong_Seokyori' totalcount='2' value='100000100111110110001000010000000000000000001000000001000000000000110001111100001100000000010000000000000000011011100000000000011000000000010000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Incheon_Jungsandong' totalcount='2' value='100000100001110110000000010000000000000000000000000000000000000000110001110000011100000000010001000000100000011011100000000000011000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Incheon_Unbukdong' totalcount='2' value='100000100001110110000000010000000000000000000000000000000000000000110001111000011100000000010001000000100000011011100000000000000000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Incheon_Unseodong' totalcount='2' value='100001100111110110001000010000000000000000001000000100000000000000110011111100011100100000011001000000100000011011111000000000011000000000010000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Jinju_Daepyeong_Eoeun' totalcount='2' value='100000100011110110000000010000011000000000000000000000000000000000110001100000001000000000001000000000000000010010000000000000011000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Jinju_Pyeongeo' totalcount='2' value='100000100101110111001000010000011000000000000000000001000000000000110011111000001100000000001000000000000000011011000000000000011100000001000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Jinju_Sangchonri' totalcount='2' value='100001100111110110001000010100100010000000001000000101000000000000110001111000011100000000011000000000100000011011100000000000011000000000000000000000000000000000100000000'/>
+<sequence spec='Sequence' taxon='Okcheon_Daecheonri' totalcount='2' value='100000100001110110000000010000000000000000000000000000000000000000110001111000001000000000010000000000000000011011100000000000011000000000000000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Oncheon_Gungsan' totalcount='2' value='100001100110010110000000000000000000000000000000000001000000000000110011111100011000100000011001000000100000011011011101000001000001000000000101001000001010000000000000000'/>
+<sequence spec='Sequence' taxon='Paju_Daeneungri' totalcount='2' value='100000100111000110000000010000000000000000000000000000000000000000110001101000011000100000010001000000100000011011100000000000000000000000011000000000000000000000000000000'/>
+<sequence spec='Sequence' taxon='Pyeongyang_Namgyeong' totalcount='2' value='100001100111110110000000010000000000000000001000000001000000000000110001110110000100000000011000000000000000001011100000000000010000000000010000000000000000000000000000000'/>
+            </data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+ 
+<run spec='beast.inference.PathSampler' chainLength="10000000" alpha='0.3' rootdir='/tmp/step' burnInPercentage='50' preBurnin="50000" deleteOldLogs='true'>
+cd $(dir)
+java -cp $(java.class.path) beast.app.beastapp.BeastMain $(resume/overwrite) -java -seed $(seed) beast.xml
+
+<mcmc id="MCMC" spec="beast.coupledMCMC.CoupledMCMC" logHeatedChains="false" resampleEvery="1000" chainLength="50000000" chains="4">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:tree" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="traitsetDate" spec="beast.evolution.tree.TraitSet" traitname="date-backward">
+Yangyang_Osanri = 6500,
+Siheung_Neunggokdong = 5550,
+Ansan_Daebubukdong = 5350,
+Ansan_Singildong = 5300,
+Asan_Jangjaeri = 4750,
+Bongsan_Jitapri = 5000,
+Busan_Dongsamdong = 6000,
+Hwaseong_Seokyori = 6000,
+Incheon_Jungsandong = 4600,
+Incheon_Unbukdong = 4950,
+Incheon_Unseodong = 5200,
+Jinju_Daepyeong_Eoeun = 4100,
+Jinju_Pyeongeo = 4100,
+Jinju_Sangchonri = 4650,
+Okcheon_Daecheonri = 5050,
+Oncheon_Gungsan = 5000,
+Paju_Daeneungri = 5650,
+Pyeongyang_Namgyeong = 4000
+
+                <taxa id="TaxonSet.chulmun" spec="TaxonSet">
+                    <alignment idref="chulmun"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.chulmun"/>
+        </tree>
+        <parameter id="mutationRate.s:chulmun" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="PDCOriginLength" spec="parameter.RealParameter" name="stateNode">0.1</parameter>
+        <parameter id="PDCCognateDeathRate" spec="parameter.RealParameter" dimension="2" lower="1.0E-5" name="stateNode" upper="1000.0">1.0 0.01</parameter>
+        <parameter id="bPopSizes.t:tree" spec="parameter.RealParameter" dimension="5" lower="0.0" name="stateNode">380.0</parameter>
+        <stateNode id="bGroupSizes.t:tree" spec="parameter.IntegerParameter" dimension="5">1</stateNode>
+        <parameter id="ucldMean.c:clock" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.0005</parameter>
+        <parameter id="ucldStdev.c:clock" upper="1.0" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:clock" spec="parameter.IntegerParameter" dimension="466">1</stateNode>
+    </state>
+
+    <init id="RandomTree.t:tree" spec="beast.evolution.tree.SimpleRandomTree" estimate="false" initial="@Tree.t:tree" taxa="@chulmun"/>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+            <distribution id="BayesianSkyline.t:tree" spec="BayesianSkyline" groupSizes="@bGroupSizes.t:tree" popSizes="@bPopSizes.t:tree">
+                <treeIntervals id="BSPTreeIntervals.t:tree" spec="TreeIntervals" tree="@Tree.t:tree"/>
+            </distribution>
+            <distribution id="MarkovChainedPopSizes.t:tree" spec="beast.math.distributions.MarkovChainDistribution" jeffreys="true" parameter="@bPopSizes.t:tree"/>
+            <prior id="PDCCognateDeathRatePrior" name="distribution" x="@PDCCognateDeathRate">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.2" spec="parameter.RealParameter" lower="0.0" name="mean" upper="0.0">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="PDCOriginLengthPrior" name="distribution" x="@PDCOriginLength">
+                <Uniform id="Uniform.1" name="distr" upper="10000.0"/>
+            </prior>
+            <prior id="MeanRatePrior.c:clock" name="distribution" x="@ucldMean.c:clock">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.9" spec="parameter.RealParameter" estimate="false" name="alpha">0.001</parameter>
+                    <parameter id="RealParameter.10" spec="parameter.RealParameter" estimate="false" name="beta">1000.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="ucldStdevPrior.c:clock" name="distribution" x="@ucldStdev.c:clock">
+                <Gamma id="Gamma.2" name="distr">
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+            <distribution id="root.prior" spec="beast.math.distributions.MRCAPrior" tree="@Tree.t:tree">
+	            <taxonset idref="TaxonSet.chulmun"/>
+                <Uniform name="distr" upper="20000.0"/>
+            </distribution>
+
+                        
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.chulmun" spec="TreeLikelihood" tree="@Tree.t:tree" useAmbiguities="true">
+                <data
+id="orgdata.chulmun"
+spec="FilteredAlignment"
+ascertained="true"
+data="@chulmun"
+excludeto="2"
+filter="-">
+                    <userDataType id="bdDataType" spec="beast.evolution.datatype.UserDataType" codeMap="                   A = 0,                   1 = 1 4,                   B = 1,                   0 = 0 2 3 ,                   ? = 0 1 2 3 4,                   - = 0 1 2 3 4,                   C = 2,                   D = 3,                   E = 4" states="5"/>
+                </data>
+                <siteModel id="SiteModel.s:chulmun" spec="SiteModel" gammaCategoryCount="1" mutationRate="@mutationRate.s:chulmun">
+                    <parameter id="gammaShape.s:chulmun" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
+                    <parameter id="proportionInvariant.s:chulmun" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                    <substModel id="PDCovarion" spec="BirthDeathCovarion2" deathprob="@PDCCognateDeathRate" originLength="@PDCOriginLength">
+                        <parameter id="PDCSwitchRate" spec="parameter.RealParameter" dimension="2" estimate="false" name="switchRate" upper="1.0">0.1 0.1</parameter>
+                        <parameter id="frequencies" spec="parameter.RealParameter" dimension="3" lower="0.0" name="vfrequencies" upper="1.0">0.95 0.05 0.0</parameter>
+                        <parameter id="hfrequencies" spec="parameter.RealParameter" dimension="2" estimate="false" lower="0.0" name="hfrequencies" upper="1.0">0.5 0.5</parameter>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:clock" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:clock" rateCategories="@rateCategories.c:clock" tree="@Tree.t:tree">
+                    <LogNormal id="LogNormalDistributionModel.c:clock" S="@ucldStdev.c:clock" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+    </distribution>
+
+    <operator id="PDCOriginLengthScaler" spec="ScaleOperator" parameter="@PDCOriginLength" scaleFactor="0.75" weight="0.1"/>
+
+    <operator id="PDCCognateDeathRateScaler" spec="ScaleOperator" parameter="@PDCCognateDeathRate" scaleFactor="0.75" weight="0.1"/>
+
+    <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
+        <parameter idref="mutationRate.s:chulmun"/>
+        <weightvector id="weightparameter" spec="parameter.IntegerParameter" estimate="false" lower="0" upper="0">171</weightvector>
+    </operator>
+
+    <operator id="BayesianSkylineTreeScaler.t:tree" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:tree" weight="3.0"/>
+
+    <operator id="BayesianSkylineTreeRootScaler.t:tree" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:tree" weight="3.0"/>
+
+    <operator id="BayesianSkylineUniformOperator.t:tree" spec="Uniform" tree="@Tree.t:tree" weight="30.0"/>
+
+    <operator id="BayesianSkylineSubtreeSlide.t:tree" spec="SubtreeSlide" tree="@Tree.t:tree" weight="15.0"/>
+
+    <operator id="BayesianSkylineNarrow.t:tree" spec="Exchange" tree="@Tree.t:tree" weight="15.0"/>
+
+    <operator id="BayesianSkylineWide.t:tree" spec="Exchange" isNarrow="false" tree="@Tree.t:tree" weight="3.0"/>
+
+    <operator id="BayesianSkylineWilsonBalding.t:tree" spec="WilsonBalding" tree="@Tree.t:tree" weight="3.0"/>
+
+    <operator id="popSizesScaler.t:tree" spec="ScaleOperator" parameter="@bPopSizes.t:tree" scaleFactor="0.75" weight="15.0"/>
+
+    <operator id="groupSizesDelta.t:tree" spec="DeltaExchangeOperator" integer="true" weight="6.0">
+        <intparameter idref="bGroupSizes.t:tree"/>
+    </operator>
+
+    <operator id="ucldMeanScaler.c:clock" spec="ScaleOperator" parameter="@ucldMean.c:clock" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:clock" spec="ScaleOperator" parameter="@ucldStdev.c:clock" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:clock" spec="IntRandomWalkOperator" parameter="@rateCategories.c:clock" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:clock" spec="SwapOperator" intparameter="@rateCategories.c:clock" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:clock" spec="UniformOperator" parameter="@rateCategories.c:clock" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:clock" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:clock"/>
+        <down idref="Tree.t:tree"/>
+    </operator>
+
+	
+    <logger id="tracelog" spec="Logger" fileName="$(filebase).log" logEvery="10000" model="@posterior" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.chulmun"/>
+        <log id="TreeHeight.t:tree" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:tree"/>
+        <log idref="mutationRate.s:chulmun"/>
+        <log idref="PDCOriginLength"/>
+        <log idref="PDCCognateDeathRate"/>
+        <log idref="BayesianSkyline.t:tree"/>
+        <log idref="bPopSizes.t:tree"/>
+        <log idref="bGroupSizes.t:tree"/>
+        <log idref="ucldMean.c:clock"/>
+        <log idref="ucldStdev.c:clock"/>
+        <log id="rate.c:clock" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:clock" tree="@Tree.t:tree"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="10000">
+        <log idref="posterior"/>
+        <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:tree" spec="Logger" fileName="$(filebase).trees" logEvery="10000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:tree" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:clock" tree="@Tree.t:tree"/>
+    </logger>
+</mcmc>
+</run>
+</beast>
